@@ -7,7 +7,7 @@ CREATE TABLE user
 INSERT INTO user (name, email, password, reg_time)
 VALUES ('Virag', 'virag@gmail.com', 'virag', NULL);
 INSERT INTO user (name, email, password, reg_time)
-VALUES ('Coco', 'coco@gmail.com', 'coco', NULL);
+VALUES ('Coco', 'coco@gmail.com', '$argon2i$v=19$m=65536,t=4,p=1$TDlRNHBIcUtNSEFWSi9Zbg$fhe3GJXh8SVLtlWHobS/VjqzpqRgH1j7drcgBVUkwTg', NULL);
 INSERT INTO user (name, email, password, reg_time)
 VALUES ('CodeCool', 'codecool@gmail.com', 'codecool', NULL);
 INSERT INTO user (name, email, password, reg_time)
