@@ -1,0 +1,14 @@
+{
+  "app": {
+    "port": 80
+  },
+
+  "db": {
+    "host": "localhost",
+    "user": "Virag",
+    "password": "coco",
+    "db_name": "users"
+  }
+
+
+}
