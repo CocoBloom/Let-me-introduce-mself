@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf4db70d92975fea130acb1666112e11",
+    "content-hash": "e9977be2a37d180405f247cc164c47dc",
     "packages": [
         {
             "name": "composer/semver",
@@ -152,16 +152,16 @@
         },
         {
             "name": "eftec/bladeone",
-            "version": "3.48",
+            "version": "3.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/EFTEC/BladeOne.git",
-                "reference": "ec215afab947924e3c150d384322e481f6091541"
+                "reference": "17acf6e7188602ab053789ff911fa9f017a1890b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/EFTEC/BladeOne/zipball/ec215afab947924e3c150d384322e481f6091541",
-                "reference": "ec215afab947924e3c150d384322e481f6091541",
+                "url": "https://api.github.com/repos/EFTEC/BladeOne/zipball/17acf6e7188602ab053789ff911fa9f017a1890b",
+                "reference": "17acf6e7188602ab053789ff911fa9f017a1890b",
                 "shasum": ""
             },
             "require": {
@@ -204,9 +204,9 @@
             ],
             "support": {
                 "issues": "https://github.com/EFTEC/BladeOne/issues",
-                "source": "https://github.com/EFTEC/BladeOne/tree/3.48"
+                "source": "https://github.com/EFTEC/BladeOne/tree/3.49"
             },
-            "time": "2021-01-06T23:10:31+00:00"
+            "time": "2021-01-10T18:58:38+00:00"
         },
         {
             "name": "felixfbecker/advanced-json-rpc",
@@ -1559,7 +1559,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.3|^8.0"
+        "php": "^7.3|^8.0",
+        "ext-json": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"

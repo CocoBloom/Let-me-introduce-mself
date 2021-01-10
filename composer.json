@@ -10,11 +10,11 @@
     "php": "^7.3|^8.0",
     "psr/log": "^1.1",
     "eftec/bladeone": "^3.47",
-    "phan/phan": "^3.2"
+    "phan/phan": "^3.2",
+    "ext-json": "*"
   },
   "autoload": {
     "psr-4": {
-      
     }
   }
 }

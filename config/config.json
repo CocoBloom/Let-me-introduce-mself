@@ -8,6 +8,10 @@
     "user": "Virag",
     "password": "coco",
     "db_name": "users"
+  },
+
+  "templates" : {
+    "templates" : "templates"
   }
 
 
