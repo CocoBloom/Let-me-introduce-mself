@@ -2,7 +2,7 @@
 
 include "database/Connection.php";
 
-class BaseController
+abstract class BaseController
 {
 
     protected PDO $dbConnection;
@@ -18,16 +18,10 @@ class BaseController
 
     public function getConnection(): PDO
     {
-
         return $this->dbConnection;
     }
 
-    public function run(string $filename)
-    {
-        // TODO: Implement run() method.
-        session_start();
-        echo file_get_contents($filename);
-    }
+    abstract public function run();
 
 
 }

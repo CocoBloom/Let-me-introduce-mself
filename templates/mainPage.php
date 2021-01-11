@@ -12,7 +12,7 @@
 <div>
     <h1> Introduction Page of Virág</h1>
     <button ><a href="/login">Login</a></button>
-    <button><a href="/privateInfos"> Private Infos</a></button>
+    <button><a href="/privateInfo"> Private Infos</a></button>
 
     <button><a href="/publicInfos">Public Infos</a></button>
 

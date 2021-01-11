@@ -14,9 +14,11 @@ class Router
 
     public static function execute($endpoint, $requestType)
     {
+
         $routeExists = true;
         foreach (self::$routes as $route) {
             if($route->getEndPoint() === $endpoint) {
+
                 if ($requestType === $route->getRequestType()) {
                     $route->execute();
                     return;
@@ -26,7 +28,6 @@ class Router
             }
         }
 
-        // If path wasn't found
         if (! $routeExists) header("HTTP/1.0 404 Not Found");
     }
 
