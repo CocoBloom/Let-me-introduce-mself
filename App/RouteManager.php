@@ -25,11 +25,9 @@ class RouteManager
 
         Router::add('/login', function () {
             $controller = new LoginHandlerController();
-            $f = $controller->validateLogin();
-            echo $f;
+            $f = $controller->validateLogin($controller->getConnection());
             $controller->run($f ? "templates/mainPage.php" : "templates/login.php");
         }, "POST");
-
 
 
         Router::add('/privateInfo', function () {

@@ -18,6 +18,7 @@ class BaseController
 
     public function getConnection(): PDO
     {
+
         return $this->dbConnection;
     }
 
@@ -27,15 +28,6 @@ class BaseController
         session_start();
         echo file_get_contents($filename);
     }
-
-    public function validateLogin(): bool {
-        session_start();
-        echo "hello";
-        echo $_POST['username'];
-        return true;
-    }
-
-
 
 
 }
