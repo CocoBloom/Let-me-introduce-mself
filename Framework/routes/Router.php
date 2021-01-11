@@ -1,6 +1,6 @@
 <?php
 
-use BK_Framework\Router\Route;
+include "Route.php";
 
 class Router
 {
@@ -12,8 +12,22 @@ class Router
         array_push(self::$routes, new Route($endpoint, $method, $requestType));
     }
 
-    public static function execute($path, $requestType)
+    public static function execute($endpoint, $requestType)
     {
+        $routeExists = true;
+        foreach (self::$routes as $route) {
+            if($route->getEndPoint() === $endpoint) {
+                if ($requestType === $route->getRequestType()) {
+                    $route->execute();
+                    return;
+                }
+            } else {
+                $routeExists = false;
+            }
+        }
+
+        // If path wasn't found
+        if (! $routeExists) header("HTTP/1.0 404 Not Found");
     }
 
 

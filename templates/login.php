@@ -6,6 +6,8 @@
 <!--    <link rel="stylesheet"-->
 <!--          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 <!--    <link rel="stylesheet" type="text/css" href="/Static/css/form.css">-->
+    <link rel="stylesheet" href="../static/css/mainPage.css" type="text/css">
+
 </head>
 <body>
 <div>
@@ -14,7 +16,7 @@
         <form action="/login" method="post">
             <div class="row">
                 <div class="col-25">
-                    <label for="username">Email:</label>
+                    <label for="email">Email:</label>
                 </div>
                 <div class="col-75">
                     <input type="text" id="email" name=email>

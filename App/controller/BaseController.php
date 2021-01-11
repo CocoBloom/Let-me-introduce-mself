@@ -2,7 +2,7 @@
 
 include "database/Connection.php";
 
-abstract class BaseController
+class BaseController
 {
 
     protected PDO $dbConnection;
@@ -21,7 +21,19 @@ abstract class BaseController
         return $this->dbConnection;
     }
 
-    abstract public function run();
+    public function run(string $filename)
+    {
+        // TODO: Implement run() method.
+        session_start();
+        echo file_get_contents($filename);
+    }
+
+    public function validateLogin(): bool {
+        session_start();
+        echo "hello";
+        echo $_POST['username'];
+        return true;
+    }
 
 
 

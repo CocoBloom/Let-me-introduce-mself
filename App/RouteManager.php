@@ -3,6 +3,7 @@
 include 'Framework/routes/Router.php';
 include 'App/controller/MainPageController.php';
 include 'App/controller/LoginController.php';
+include 'App/controller/LoginHandlerController.php';
 include 'App/controller/PrivateInfoController.php';
 include 'App/controller/PublicInfoController.php';
 
@@ -13,23 +14,35 @@ class RouteManager
     {
 
         Router::add('/', function () {
-            $controller = new MainPageController();
-            $controller->run();
+            $controller = new BaseController();
+            $controller->run("templates/mainPage.php");
         }, "GET");
 
         Router::add('/login', function () {
-            echo "homepage";
+            $controller = new BaseController();
+            $controller->run("templates/login.php");
         }, "GET");
 
-        Router::add('/privateInfos', function () {
-            echo "homepage";
+        Router::add('/login', function () {
+            $controller = new LoginHandlerController();
+            $f = $controller->validateLogin();
+            echo $f;
+            $controller->run($f ? "templates/mainPage.php" : "templates/login.php");
+        }, "POST");
+
+
+
+        Router::add('/privateInfo', function () {
+            $controller = new BaseController();
+            $controller->run("templates/privateInfo.php");
         }, "GET");
 
         Router::add('/publicInfos', function () {
-            echo "homepage";
+            $controller = new BaseController();
+            $controller->run("templates/publicInfo.php");
         }, "GET");
 
-        var_dump( Router::$routes);
+
 
     }
 }
