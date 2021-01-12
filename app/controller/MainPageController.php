@@ -1,13 +1,21 @@
 <?php
-include 'BaseController.php';
+
+namespace App\controller;
 
 class MainPageController extends BaseController
 {
+    protected string $filename;
+
+    public function __construct($filename)
+    {
+        parent::__construct();
+        $this->filename = $filename;
+    }
 
     public function run()
     {
         session_start();
-        echo file_get_contents('templates/mainPage.php');
+        $this->getView()->render($this->filename, []);
     }
 
 }

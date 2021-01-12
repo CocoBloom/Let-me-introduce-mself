@@ -1,8 +1,10 @@
 <?php
 
-include "app/RouteManager.php";
 
-require_once("/home/virag/Projects/JobHunt/introduction-to-Prioris/vendor/autoload.php");
+use App\RouteManager;
+use Framework\routes\Router;
+
+require_once("vendor/autoload.php");
 
 
 RouteManager::init();

@@ -13,6 +13,7 @@
 <div>
     <div class="container">
         <h1>Login</h1>
+        <a href="/">Home</a>
         <form action="/login" method="post">
             <div class="row">
                 <div class="col-25">

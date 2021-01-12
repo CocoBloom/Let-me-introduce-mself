@@ -12,6 +12,7 @@
 <div>
     <h1> The Most Secret Infos of Virag</h1>
 
+    <a href="/">Home</a>
 
 </div>
 </body>

@@ -1,11 +1,19 @@
 <?php
+namespace App\controller;
 
 class LoginController extends BaseController
 {
+    public string $filename;
+
+    public function __construct($filename)
+    {
+        parent::__construct();
+        $this->filename = $filename;
+    }
+
     public function run()
     {
         session_start();
-        var_dump($_SESSION);
-        echo file_get_contents('templates/login.php');
+        $this->getView()->render($this->filename, []);
     }
 }

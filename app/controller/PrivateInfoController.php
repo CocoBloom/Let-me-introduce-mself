@@ -1,12 +1,19 @@
 <?php
+namespace App\controller;
 
 class PrivateInfoController extends BaseController
 {
+    protected string $filename;
+
+    public function __construct($filename)
+    {
+        parent::__construct();
+        $this->filename = $filename;
+    }
+
     public function run()
     {
         session_start();
-        var_dump($_SESSION);
-        session_start();
-        echo file_get_contents("templates/privateInfo.php");
+        $this->getView()->render($this->filename, []);
     }
 }

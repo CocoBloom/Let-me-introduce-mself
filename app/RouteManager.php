@@ -1,43 +1,53 @@
 <?php
 
-include 'framework/routes/Router.php';
-include 'app/controller/MainPageController.php';
-include 'app/controller/LoginController.php';
-include 'app/controller/LoginHandlerController.php';
-include 'app/controller/PrivateInfoController.php';
-include 'app/controller/PublicInfoController.php';
+namespace App;
 
+use App\controller\AuthController;
+use App\controller\LogOutController;
+use Framework\routes\Router;
+use App\controller\MainPageController;
+use App\controller\LoginController;
+use App\controller\LoginHandlerController;
+use App\controller\PrivateInfoController;
+use App\controller\PublicInfoController;
 
 class RouteManager
 {
     public static function init(): void
     {
-
         Router::add('/', function () {
-            $controller = new MainPageController();
+            $controller = new MainPageController("templates/mainPage.php");
             $controller->run();
-        }, "GET");
+        }, false, "GET");
 
         Router::add('/login', function () {
-            $controller = new LoginController();
+            $controller = new LoginController("templates/login.php");
             $controller->run();
-        }, "GET");
+        }, false,"GET");
 
         Router::add('/login', function () {
-            $controller = new LoginHandlerController();
+            $controller = new LoginHandlerController("templates/mainPage.php");
             $controller->run();
-        }, "POST");
+        }, false,"POST");
 
+        Router::add('/logout', function () {
+            $controller = new LogOutController();
+            $controller->run();
+        }, false, "GET");
 
         Router::add('/privateInfo', function () {
-            $controller = new PrivateInfoController();
+            if (AuthController::checkAuth()) {
+                $controller = new PrivateInfoController("templates/privateInfo.php");
+            } else {
+                $controller = new PrivateInfoController("templates/login.php");
+            }
             $controller->run();
-        }, "GET");
+        }, true,"GET");
 
         Router::add('/publicInfos', function () {
-            $controller = new PublicInfoController();
+            $controller = new PublicInfoController("templates/publicInfo.php");
             $controller->run();
-        }, "GET");
+        }, false,"GET");
 
 
 

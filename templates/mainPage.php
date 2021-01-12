@@ -9,14 +9,18 @@
     <link rel="stylesheet" href="../static/css/mainPage.css" type="text/css">
 </head>
 <body>
-<div>
-    <h1> Introduction Page of Virág</h1>
-    <button ><a href="/login">Login</a></button>
-    <button><a href="/privateInfo"> Private Infos</a></button>
 
+
+<div>
+    <h1> Introduction Page of Virag</h1>
+    <button ><a href="/login">Login</a></button>`
+    <button><a href="/privateInfo"> Private Infos</a></button>
+    <button ><a href="/logout">Logout</a></button>`
     <button><a href="/publicInfos">Public Infos</a></button>
 
+
 </div>
+
 </body>
 
 

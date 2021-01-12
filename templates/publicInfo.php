@@ -11,6 +11,7 @@
 <body>
 <div>
     <h1>Virag's public infos</h1>
+    <a href="/">Home</a>
 
 
 </div>
