@@ -2,7 +2,6 @@
 
 namespace Framework\routes;
 
-
 use App\controller\AuthController;
 
 class Router
@@ -17,18 +16,17 @@ class Router
 
     public static function execute($endpoint, $requestType)
     {
-
         $routeExists = true;
 
         foreach (self::$routes as $route) {
             if($route->getEndPoint() === $endpoint) {
-                if ( ! $route->getRouteDatas['authIsNecessary']) {
+                if (!$route->getRouteDatas['authIsNecessary']) {
                     if ($requestType === $route->getRequestType()) {
                         $route->execute();
                         return;
                     }
                 } else {
-                    if(AuthController::checkAuth()) {
+                    if (AuthController::checkAuth()) {
                         $route->execute();
                         return;
                     } else {
@@ -40,7 +38,7 @@ class Router
             }
         }
 
-        if (! $routeExists) header("HTTP/1.0 404 Not Found");
+        if (!$routeExists) header("HTTP/1.0 404 Not Found");
     }
 
     public static function getRoutes(): array

@@ -9,19 +9,16 @@
     <link rel="stylesheet" href="../static/css/mainPage.css" type="text/css">
 </head>
 <body>
-
-
-<div>
-    <h1> Introduction Page of Virag</h1>
-    <button ><a href="/login">Login</a></button>`
-    <button><a href="/privateInfo"> Private Infos</a></button>
-    <button ><a href="/logout">Logout</a></button>`
-    <button><a href="/publicInfos">Public Infos</a></button>
-
-
-</div>
-
+    <div class="container">
+        <div class="welcomeMessage">
+            <h1> Introduction Page of Virag</h1>
+        </div>
+        <div class="availablePages">
+            <button ><a href="/login">Login</a></button>`
+            <button><a href="/privateInfo"> Private Infos</a></button>
+            <button ><a href="/logout">Logout</a></button>`
+            <button><a href="/publicInfos">Public Infos</a></button>
+        </div>
+    </div>
 </body>
-
-
 </html>

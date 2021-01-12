@@ -8,7 +8,6 @@ use Framework\routes\Router;
 class AuthController
 {
 
-
     public static function checkAuth(): bool
     {
         session_start();
@@ -17,7 +16,6 @@ class AuthController
 
     public static function redirectToLogin() {
         $loginController = Router::getRoutes()['/loginGET'];
-        var_dump($loginController);
         $loginController->execute();
     }
 }
