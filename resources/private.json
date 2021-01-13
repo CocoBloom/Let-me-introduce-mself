@@ -2,12 +2,12 @@
   "sessioned" : {
     "messageContent" :
         "<h1>Hobbik, szabadidő:</h1><br/>",
-    "visibleLinks" : "<a class='routeLink' href='/logout'>Logout</a>"
+    "visibleLink" : "<a class='routeLink' href='/logout'>Logout</a>"
   },
   "notsessioned" : {
     "messageContent":
     "<h1>Hobbik, szabadidő:</h1><br/>",
-    "visibleLinks": "<a class='routeLink' href='/login'>Login</a>"
+    "visibleLink": "<a class='routeLink' href='/login'>Login</a>"
   }
 
 }

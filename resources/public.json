@@ -3,12 +3,12 @@
     "messageContent" :
         "</h2><div class='img'><img src='/static/images/Virag.jpg' alt='Virag' width='40%' height='30%'></div><div class='personaldata'><ul class='myList'><li>Name: Baranyai Virág</li><li>Lakhely: Budapest</li><li>Születési hely: Kaposvár</li><li>Coco</li></ul></div><div class='text'>Plusz infok.....</div>",
 
-    "visibleLinks" : " <a class='routeLink' href='/privateInfo'>Private Infos</a><a class='routeLink' href='/logout'>Logout</a>"
+    "visibleLink" : " <a class='routeLink' href='/privateInfo'>Private Infos</a><a class='routeLink' href='/logout'>Logout</a>"
   },
   "notsessioned" : {
     "messageContent": "",
 
-    "visibleLinks": "<a class='routeLink' href='/login'>Login</a>"
+    "visibleLink": "<a class='routeLink' href='/login'>Login</a>"
   }
 
 }
