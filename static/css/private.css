@@ -19,7 +19,7 @@ body{
     border: 3px solid green;
     border-radius: 15px;
     width: 50%;
-    height: 80%;
+    height: 90%;
     align-items: center;
     justify-content: center;
     background: rgba(0, 128, 128, 0.6);
@@ -28,7 +28,7 @@ body{
 
 .container > * {
     margin: auto;
-    padding: 20px;
+    padding: 5px;
     border-radius: 15px;
 }
 
@@ -39,7 +39,7 @@ body{
 .privateMessage {
     background: rgba(0, 128, 0, 0.2);
     border: 2px cornsilk solid;
-    height: 50%;
+    height: 60%;
     width: 80%;
     margin-bottom: 20px;
     font: normal 18px Laksaman;
@@ -51,23 +51,7 @@ body{
     height: 20%;
     width: 60%;
     position: center;
-    /*margin: auto;*/
 }
-
-/*.infoButton {*/
-/*    display: inline-block;*/
-/*    width: 30%;*/
-/*    height: 30%;*/
-/*    margin: auto;*/
-/*    top: 40%;*/
-/*    background: rgba(255,255,255,0.2);*/
-
-/*    border: 1px yellow solid;*/
-/*}*/
-
-/*.infoButton:hover {*/
-/*    border: 1px solid white;*/
-/*}*/
 
 .routeLink {
     text-decoration: none;
@@ -96,13 +80,14 @@ body{
 img {
     float: left;
     width: 30%;
-    height: 85%;
-    /*padding-top: 30px;*/
+    height: 40%;
     position: center;
-    padding-top: 0;
+    padding-left: 20px;
+
 }
 
 .myList {
+    /*float: right;*/
     list-style-type:none;
     position: center;
 }

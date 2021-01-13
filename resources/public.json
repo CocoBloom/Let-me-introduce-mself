@@ -1,13 +1,13 @@
 {
   "sessioned" : {
     "messageContent" :
-        "<div class='img'><img src='/static/images/Virag.jpg' alt='Virag'></div><div class='personaldata'><ul class='myList'><li>Name: Baranyai Virág</li><li>Lakhely: Budapest</li><li>Születési hely: Kaposvár</li><li>Coco</li></ul></div><div class='text'>Plusz infok.....</div>",
+        "<div class='img'><img src='/static/images/Virag.jpg' alt='Virag'></div><div class='personaldata'><ul class='myList'><li>Baranyai Virág</li><li>Lakhely: Budapest</li><li>Születési hely: Kaposvár<li></li> vírus alatti fő tartózkodási hely, Kisasszond, Somogy </li></ul></div><div class='text'><p>2019. március 2-ikán kezdtem a full-stack developer képzést. Előtte Angliában éltem, Bristolban és a tanfolyam miatt döntöttem a hazaköltözés mellett. <br/>Végzettségem szerint természetvédelmi mérnök vagyok, a Soproni egyetemen végeztem 2011-ben. A gimnáziumot matematika fakultáción végeztem el.</p></div>",
 
     "visibleLink" : " <a class='routeLink' href='/privateInfo'>Private Infos</a><a class='routeLink' href='/logout'>Logout</a>"
   },
   "notsessioned" : {
-    "messageContent": "</h2><div class='img'><img src='/static/images/Virag.jpg' alt='Virag'></div><div class='personaldata'><ul class='myList'><li>Name: Baranyai Virág</li><li>Lakhely: Budapest</li><li>Születési hely: Kaposvár</li><li>Coco</li></ul></div><div class='text'>Plusz infok.....</div>",
-
+    "messageContent" :
+    "<div class='img'><img src='/static/images/Virag.jpg' alt='Virag'></div><div class='personaldata'><ul class='myList'><li>Baranyai Virág</li><li>Lakhely: Budapest</li><li>Születési hely: Kaposvár<li></li> vírus alatti fő tartózkodási hely, Kisasszond, Somogy </li></ul></div><div class='text'><p>2019. március 2-ikán kezdtem a full-stack developer képzést. Előtte Angliában éltem, Bristolban és a tanfolyam miatt döntöttem a hazaköltözés mellett. <br/>Végzettségem szerint természetvédelmi mérnök vagyok, a Soproni egyetemen végeztem 2011-ben. A gimnáziumot matematika fakultáción végeztem el.</p></div>",
 
     "visibleLink": "<a class='routeLink' href='/login'>Login</a>"
   }

@@ -8,7 +8,7 @@
 <body>
     <div>
         <div class="container">
-            <h1 class="title"> private Page of Virag</h1>
+            <h1 class="title"> Privát információk</h1>
             <div class="privateMessage">
                 {{ messageContent }}
             </div>
