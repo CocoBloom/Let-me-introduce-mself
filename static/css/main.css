@@ -1,0 +1,78 @@
+body{
+    /*background-color: aquamarine;*/
+    background-image: url("../images/20201010_180300.jpg");
+    background-size: 105%;
+    font: normal 20px Laksaman;
+    color: cornsilk;
+}
+
+.container {
+    text-align: center;
+    display: table-column;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    vertical-align: center;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 3px solid cornsilk;
+    border-radius: 15px;
+    width: 55%;
+    height: 85%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 128, 128, 0.6);
+}
+
+.container > * {
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.title {
+    height: auto;
+    font-size: 50px;
+}
+
+.welcomeMessage {
+    background: rgba(0, 128, 0, 0.2);
+    border: 2px cornsilk solid;
+    height: 50%;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.buttonContainer {
+    background: rgba(0, 128, 0, 0.2);
+    border:2px cornsilk solid;
+    height: 18%;
+    width: 80%;
+    position: center;
+}
+
+.routeLink {
+    text-decoration: none;
+    position: center;
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    color: cornsilk;
+    /*background: rgba(255,255,255,0.2);*/
+    border: 2px cornsilk solid;
+    border-radius: 5px 15px;
+    text-align: center;
+    margin-top: 4%;
+    margin-right: 3%;
+    line-height: 65px;
+    background: darkslategray;
+    font-size: 20px;
+}
+
+.routeLink:hover {
+    border: 4px solid darkslategray;
+    background:  cornsilk;
+    color: darkslategray;
+}
+

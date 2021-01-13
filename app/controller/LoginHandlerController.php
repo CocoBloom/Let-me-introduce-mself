@@ -38,18 +38,17 @@ class LoginHandlerController extends BaseController
 
         foreach ($users as $user) {
             if ($user->email == $email && password_verify($password, $user->password)) {
-                $this->setSession($email, password_hash("sessioned", PASSWORD_DEFAULT), $user->name );
+                $this->setSession($user->name, $email);
                 return true;
             }
         }
         return false;
     }
 
-    public function setSession(string $email, string $token, string $name)
+    public function setSession(string $name, string $email)
     {
         $_SESSION['name'] = $name;
         $_SESSION['email'] = $email;
-        $_SESSION['token'] = $token;
     }
 
 }

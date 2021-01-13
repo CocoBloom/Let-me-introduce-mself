@@ -1,0 +1,73 @@
+body{
+    /*background-color: aquamarine;*/
+    background-image: url("../images/20201010_180300.jpg");
+    background-size: 105%;
+}
+
+.container {
+    text-align: center;
+    display: table-column;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    vertical-align: center;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 3px solid green;
+    border-radius: 15px;
+    width: 55%;
+    height: 75%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 128, 128, 0.6);
+}
+
+.container > * {
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.title {
+    height: auto;
+}
+
+.welcomeMessage {
+    background: rgba(0, 128, 0, 0.2);
+    border: 2px black solid;
+    height: 50%;
+    width: 80%;
+    margin-bottom: 20px;
+    /*margin: auto;*/
+}
+
+.buttonContainer {
+    background: rgba(255,255,255,0.2);
+    border:2px black solid;
+    height: 20%;
+    width: 80%;
+    position: center;
+}
+
+.routeLink {
+    text-decoration: none;
+    position: center;
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    color: beige;
+    background: rgba(255,255,255,0.2);
+    border: 3px beige solid;
+    border-radius: 15px 5px;
+    text-align: center;
+    margin-top: 4%;
+    margin-right: 3%;
+    line-height: 65px;
+    background: #383837;
+}
+
+.routeLink:hover {
+    border: 1px solid white;
+    color: beige;
+}

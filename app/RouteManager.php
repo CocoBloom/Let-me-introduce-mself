@@ -26,7 +26,7 @@ class RouteManager
         }, false,"GET");
 
         Router::add('/login', function () {
-            $controller = new LoginHandlerController("templates/mainPage.php");
+            $controller = new LoginHandlerController("templates/login.php");
             $controller->run();
         }, false,"POST");
 

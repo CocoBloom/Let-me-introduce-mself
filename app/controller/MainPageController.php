@@ -16,6 +16,7 @@ class MainPageController extends BaseController
     {
         session_start();
         $this->getView()->render($this->filename, []);
+
     }
 
 }
