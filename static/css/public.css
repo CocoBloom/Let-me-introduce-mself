@@ -89,10 +89,11 @@ img {
 
 .text {
     float: right;
-    border: 2px solid black;
     width: 65%;
     height: 60%;
     position: center;
     text-align: center;
+    background: rgba(0, 128, 0, 0.3);
+
 }
 
