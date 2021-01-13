@@ -1,7 +1,7 @@
 {
   "sessioned" : {
     "messageContent" :
-        "<h1>Hobbik, szabadidő:</h1><br/>",
+        "<h1>Hobbik, szabadidő:</h1><br/><ul class='myList'><li>Falmászás</li><li>Jóga</li><li>Búvárkodás</li><li>Programok a kutyámmal Cocoval</li><li>Mozi minden mennyiségben</li></ul>",
     "visibleLink" : "<a class='routeLink' href='/logout'>Logout</a>"
   },
   "notsessioned" : {
@@ -11,3 +11,4 @@
   }
 
 }
+

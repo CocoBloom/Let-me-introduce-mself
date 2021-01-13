@@ -92,3 +92,17 @@ body{
     background:  cornsilk;
     color: darkslategray;
 }
+
+img {
+    float: left;
+    width: 30%;
+    height: 85%;
+    /*padding-top: 30px;*/
+    position: center;
+    padding-top: 0;
+}
+
+.myList {
+    list-style-type:none;
+    position: center;
+}
