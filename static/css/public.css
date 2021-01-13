@@ -1,7 +1,7 @@
 body{
     /*background-color: aquamarine;*/
-    background-image: url("../images/20201010_180300.jpg");
-    background-size: 105%;
+    background-image: url("../images/20190619_205511.jpg");
+    background-size: 100%;
 }
 
 .container {
@@ -33,7 +33,7 @@ body{
     height: auto;
 }
 
-.welcomeMessage {
+.publicMessage {
     background: rgba(0, 128, 0, 0.2);
     border: 2px black solid;
     height: 50%;
@@ -42,7 +42,7 @@ body{
     /*margin: auto;*/
 }
 
-.buttonContainer {
+.publicContainer {
     background: rgba(255,255,255,0.2);
     border:2px black solid;
     height: 20%;

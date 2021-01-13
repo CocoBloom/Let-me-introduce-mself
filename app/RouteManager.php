@@ -44,7 +44,7 @@ class RouteManager
             $controller->run();
         }, true,"GET");
 
-        Router::add('/publicInfos', function () {
+        Router::add('/publicInfo', function () {
             $controller = new PublicInfoController("templates/publicInfo.php");
             $controller->run();
         }, false,"GET");

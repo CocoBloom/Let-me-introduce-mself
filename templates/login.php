@@ -15,7 +15,7 @@
         <h1 class="title">Login</h1>
         <div class="header">
             <a class="submitButton" href="/">Home</a>
-            <a class="submitButton" href="/publicInfos">Public Infos</a>
+            <a class="submitButton" href="/publicInfo">Public Infos</a>
         </div>
         <div class="loginMessage">
             <p1>Texttttt</p1>

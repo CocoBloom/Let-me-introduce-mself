@@ -12,12 +12,14 @@
     <div>
         <div class="container">
             <h1 class="title"> private Page of Virag</h1>
-            <div class="welcomeMessage">
-                <h1>private inforamtions abput me</h1>
+            <div class="privateMessage">
+                <p>privatemessage</p>
             </div>
-            <div class="buttonContainer">
+            <div class="header">
+                <a class="routeLink" href="/">Home</a>
+                <a class="routeLink" href="/publicInfo">Public Infos</a>
+            </div>
 
-            </div>
         </div>
     </div>
 </body>

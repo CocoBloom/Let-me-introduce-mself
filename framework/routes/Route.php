@@ -23,11 +23,6 @@ class Route
         return $this->routeDatas['requestType'];
     }
 
-//    public function getRouteDatas(): array
-//    {
-//        return $this->routeDatas;
-//    }
-
     public function execute(): void
     {
         call_user_func($this->routeDatas["method"]);

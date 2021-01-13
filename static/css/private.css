@@ -34,7 +34,7 @@ body{
     height: auto;
 }
 
-.welcomeMessage {
+.privateMessage {
     background: rgba(0, 128, 0, 0.2);
     border: 2px black solid;
     height: 50%;
@@ -53,7 +53,7 @@ body{
     /*margin: auto;*/
 }
 
-.infoButton {
+.routeLink {
     display: inline-block;
     width: 30%;
     height: 30%;
@@ -64,6 +64,6 @@ body{
     border: 1px yellow solid;
 }
 
-.infoButton:hover {
+.routeLink:hover {
     border: 1px solid white;
 }

@@ -16,7 +16,7 @@
             <h1>Welcomemessage place......</h1>
         </div>
         <div class="buttonContainer">
-            <a class="routeLink" href="/publicInfos">Public Infos</a>
+            <a class="routeLink" href="/publicInfo">Public Infos</a>
 <!--            <button class="infoButton"><a href="/login">Login</a></button>-->
             <a class="routeLink" href="/logout">Logout</a>
             <a class="routeLink" href="/privateInfo">Private Infos</a>
