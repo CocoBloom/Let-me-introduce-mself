@@ -18,7 +18,7 @@
             <a class="submitButton" href="/publicInfo">Public Infos</a>
         </div>
         <div class="loginMessage">
-            <p1>Texttttt</p1>
+            {{ messageContent }}
         </div>
         <div class="loginForm">
             <form action="/login" method="post">

@@ -1,0 +1,13 @@
+{
+  "sessioned" : {
+    "messageContent" : "Egy felhasználó már bejelentkezett az oldalra. Ha más felhasználóval szeretnél bejelntkezni, kérlek előbb jelentkezz ki."
+       ,
+    "visibleLink" : "<a class='routeLink' href='/privateInfo'>Private Infos</a><a class='routeLink' href='/logout'>Logout</a>"
+  },
+  "notsessioned" : {
+    "messageContent": "<p class='text' >Ha szeretnéd a Private oldalt megtekinteni, kérlek, előbb jelentkezz be. Regisztrált felhasználok adatait, az adatbázishoz tartozó sql fileban találod.</p>",
+
+    "visibleLink": ""
+  }
+}
+

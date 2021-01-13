@@ -38,7 +38,7 @@ class ViewTemplate
         return $templateFileContent;
     }
 
-    
+
     public function getJsonObjectWithControllerVariables(string $json_file): array
     {
         $jsonData = file_get_contents($json_file, true);
