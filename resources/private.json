@@ -1,7 +1,7 @@
 {
   "sessioned" : {
     "messageContent" :
-        "<h1>Hobbik, szabadidő:</h1><br/><div class='img'><img src='/static/images/20170924_133702.jpg' alt='Virag'></div><ul class='myList'><li>Falmászás</li><li>Jóga</li><li>Búvárkodás</li><li>Programok a kutyámmal Cocoval</li><li>Mozi minden mennyiségben</li></ul>",
+        "<h1>Hobbik, szabadidő:</h1><br/><div class='img'><img src='/static/images/20170924_133702.jpg' alt='Virag'></div><ul class='myList'><li>Falmászás</li><li>Jóga</li><li>Búvárkodás</li><li>Programok a kutyámmal Cocoval</li><li>Mozi minden mennyiségben</li><li>2017-ben legyalogoltam a Camino de Santiagot</li><li>Imádom a gumi cukrot, hiába egészségtelen.</li></ul>",
     "visibleLink" : "<a class='routeLink' href='/logout'>Logout</a>"
   },
   "notsessioned" : {
