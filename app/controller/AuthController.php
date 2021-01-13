@@ -15,6 +15,7 @@ class AuthController
     }
 
     public static function redirectToLogin() {
+        session_start();
         $loginController = Router::getRoutes()['/loginGET'];
         $loginController->execute();
     }
