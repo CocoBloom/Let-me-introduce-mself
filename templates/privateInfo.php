@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Private Page</title>
     <link rel="stylesheet" href="../static/css/private.css" type="text/css">
-    <link rel="stylesheet" href="../static/css/main.css" type="text/css">
 </head>
 <body>
     <div>

@@ -22,10 +22,10 @@ class ViewTemplate
         session_start();
         $jsonData = file_get_contents($json_file, true);
         $jsonObj = get_object_vars(json_decode($jsonData));
-
         $templateFileContent = file_get_contents($template);
 
         $isSessioned = AuthController::checkAuth() ? 'sessioned' : 'notsessioned';
+        var_dump($isSessioned);
         $sessioned = get_object_vars($jsonObj[$isSessioned]);
         $keys = array_keys($sessioned);
 

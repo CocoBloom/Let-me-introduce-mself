@@ -1,5 +1,5 @@
 body{
-    background-image: url("../images/20201010_180300.jpg");
+    background-image: url("../images/mainIMG.jpg");
     background-size: 105%;
     font: normal 20px Laksaman;
     color: cornsilk;
@@ -59,7 +59,6 @@ body{
     width: 25%;
     height: 50%;
     color: cornsilk;
-    /*background: rgba(255,255,255,0.2);*/
     border: 2px cornsilk solid;
     border-radius: 5px 15px;
     text-align: center;

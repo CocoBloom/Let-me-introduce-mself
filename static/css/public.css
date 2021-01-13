@@ -1,6 +1,8 @@
 body{
-    background-image: url("../images/20190619_205511.jpg");
+    background-image: url("../images/publicImg.jpg");
     background-size: 100%;
+    font: normal 20px Laksaman;
+    color: cornsilk;
 }
 
 .container {
@@ -13,10 +15,10 @@ body{
     vertical-align: center;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border: 3px solid green;
+    border: 3px solid cornsilk;
     border-radius: 15px;
     width: 55%;
-    height: 75%;
+    height: 85%;
     align-items: center;
     justify-content: center;
     background: rgba(0, 128, 128, 0.6);
@@ -34,18 +36,63 @@ body{
 
 .publicMessage {
     background: rgba(0, 128, 0, 0.2);
-    border: 2px black solid;
+    border: 2px cornsilk solid;
     height: 50%;
     width: 80%;
     margin-bottom: 20px;
-    /*margin: auto;*/
+    font: normal 18px Laksaman;
 }
 
 .publicContainer {
-    background: rgba(255,255,255,0.2);
-    border:2px black solid;
-    height: 20%;
+    background: rgba(0, 128, 0, 0.2);
+    border:2px cornsilk solid;
+    height: 18%;
     width: 80%;
     position: center;
+}
+
+.routeLink {
+    text-decoration: none;
+    position: center;
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    color: cornsilk;
+    border: 2px cornsilk solid;
+    border-radius: 5px 15px;
+    text-align: center;
+    margin-top: 4%;
+    margin-right: 3%;
+    line-height: 65px;
+    background: darkslategray;
+    font-size: 20px;
+}
+
+.routeLink:hover {
+    border: 4px solid darkslategray;
+    background:  cornsilk;
+    color: darkslategray;
+}
+
+img {
+    float: left;
+    width: 30%;
+    height: 85%;
+    padding-top: 30px;
+    position: center;
+}
+
+.myList {
+    list-style-type:none;
+    position: center;
+}
+
+.text {
+    float: right;
+    border: 2px solid black;
+    width: 65%;
+    height: 60%;
+    position: center;
+    text-align: center;
 }
 
