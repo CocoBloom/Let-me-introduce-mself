@@ -11,7 +11,7 @@ class AuthController
     public static function checkAuth(): bool
     {
         session_start();
-        return isset($_SESSION['email']);
+        return isset($_SESSION['name']);
     }
 
     public static function redirectToLogin() {

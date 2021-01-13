@@ -1,5 +1,4 @@
 body{
-    /*background-color: aquamarine;*/
     background-image: url("../images/20190619_205511.jpg");
     background-size: 100%;
 }
@@ -50,24 +49,3 @@ body{
     position: center;
 }
 
-.routeLink {
-    text-decoration: none;
-    position: center;
-    display: inline-block;
-    width: 25%;
-    height: 50%;
-    color: beige;
-    background: rgba(255,255,255,0.2);
-    border: 3px beige solid;
-    border-radius: 15px 5px;
-    text-align: center;
-    margin-top: 4%;
-    margin-right: 3%;
-    line-height: 65px;
-    background: #383837;
-}
-
-.routeLink:hover {
-    border: 1px solid white;
-    color: beige;
-}

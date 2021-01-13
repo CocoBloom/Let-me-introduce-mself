@@ -1,5 +1,4 @@
 body{
-    /*background-color: aquamarine;*/
     background-image: url("../images/20201010_180300.jpg");
     background-size: 105%;
     font: normal 20px Laksaman;
@@ -42,6 +41,7 @@ body{
     height: 50%;
     width: 80%;
     margin-bottom: 20px;
+    font: normal 18px Laksaman;
 }
 
 .buttonContainer {

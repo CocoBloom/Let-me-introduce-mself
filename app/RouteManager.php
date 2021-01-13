@@ -16,17 +16,17 @@ class RouteManager
     public static function init(): void
     {
         Router::add('/', function () {
-            $controller = new MainPageController("templates/mainPage.php");
+            $controller = new MainPageController("templates/mainPage.php", 'resources/main.json');
             $controller->run();
         }, false, "GET");
 
         Router::add('/login', function () {
-            $controller = new LoginController("templates/login.php");
+            $controller = new LoginController("templates/login.php", 'resources/login.json');
             $controller->run();
         }, false,"GET");
 
         Router::add('/login', function () {
-            $controller = new LoginHandlerController("templates/login.php");
+            $controller = new LoginHandlerController("templates/login.php", 'resources/login.json');
             $controller->run();
         }, false,"POST");
 
@@ -37,15 +37,15 @@ class RouteManager
 
         Router::add('/privateInfo', function () {
             if (AuthController::checkAuth()) {
-                $controller = new PrivateInfoController("templates/privateInfo.php");
+                $controller = new PrivateInfoController("templates/privateInfo.php", 'resources/private.json');
             } else {
-                $controller = new PrivateInfoController("templates/login.php");
+                $controller = new PrivateInfoController("templates/login.php", 'resources/login.json');
             }
             $controller->run();
         }, true,"GET");
 
         Router::add('/publicInfo', function () {
-            $controller = new PublicInfoController("templates/publicInfo.php");
+            $controller = new PublicInfoController("templates/publicInfo.php", 'resources/public.json');
             $controller->run();
         }, false,"GET");
 

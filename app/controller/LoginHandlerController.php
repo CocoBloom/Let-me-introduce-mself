@@ -10,11 +10,13 @@ use PDO;
 class LoginHandlerController extends BaseController
 {
     protected string $filename;
+    protected string $jsonSource;
 
-    public function __construct($filename)
+    public function __construct($filename, $jsonSource)
     {
         parent::__construct();
         $this->filename = $filename;
+        $this->jsonSource = $jsonSource;
     }
 
     public function run()
@@ -24,7 +26,7 @@ class LoginHandlerController extends BaseController
         if ($this->validateLogin()) {
             header("Location:/");
         } else {
-            $this->getView()->render($this->filename, []);
+            $this->getView()->render($this->filename, $this->jsonSource);
         }
     }
 
@@ -33,9 +35,7 @@ class LoginHandlerController extends BaseController
         session_start();
         $email = $_POST['email'];
         $password = $_POST['password'];
-        echo $email;
         $users = UserQueries::getAllUsers($this->getConnection());
-
         foreach ($users as $user) {
             if ($user->email == $email && password_verify($password, $user->password)) {
                 $this->setSession($user->name, $email);

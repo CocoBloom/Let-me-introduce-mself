@@ -2,35 +2,42 @@
 
 namespace Framework\view;
 
+use App\controller\AuthController;
+
 class ViewTemplate
 
 {
-    public function render(string $filename, array $variables) {
+    public function render(string $filename, string $jsonSource)
+    {
         try {
-            echo $this->replaceVariablesInText($filename, $variables);
+            echo($this->replaceVariablesInText($filename, $jsonSource));
         } catch (Exception $e) {
-            echo $e;
+            echo 'catch';
         }
 
     }
 
-    public function replaceVariablesInText (string $filename, array $variables) {
-        $fileContent =  file_get_contents($filename);
-        $variables = [
-            "siker" => "COCOOOOO",
-            "alkaloid" => "kiváló alkalom"
-        ];
-//        $keys = array_keys($variables);
-//        var_dump($keys);
-//        echo "'/'.alma.'/'";
-//        $changeContent = '';
-//        //            preg_replace('/\$_SESSION\[\'email\'\]/', $variable->, $fileContent);
-//        foreach ($keys as $key) {
-//            echo $key;
-//            $changeContent = preg_replace( '\{\{/.$key.\}\}/', $variables['$key'], $fileContent);
-//        }
-        return $fileContent;
+    public function replaceVariablesInText(string $template, string $json_file)
+    {
+        session_start();
+        $jsonData = file_get_contents($json_file, true);
+        $jsonObj = get_object_vars(json_decode($jsonData));
 
+        $templateFileContent = file_get_contents($template);
+
+        $isSessioned = AuthController::checkAuth() ? 'sessioned' : 'notsessioned';
+        $sessioned = get_object_vars($jsonObj[$isSessioned]);
+        $keys = array_keys($sessioned);
+
+        foreach($keys as $key ) {
+            if($key === 'messageContent') {
+                $setUpSessionedNameInContent = preg_replace('/{{, \$_SESSION\[\'name\'] }}/', $_SESSION['name'], $sessioned['messageContent']);
+                $templateFileContent = preg_replace('/{{ messageContent }}/', $setUpSessionedNameInContent, $templateFileContent);
+            } else {
+                $templateFileContent = preg_replace('/{{ '.$key.' }}/', $sessioned[$key], $templateFileContent);
+            }
+        }
+        return $templateFileContent;
     }
-
 }
+

@@ -34,17 +34,16 @@ body{
     height: auto;
 }
 
-.privateMessage {
-    background: rgba(0, 128, 0, 0.2);
-    border: 2px black solid;
-    height: 50%;
-    width: 60%;
-    margin-bottom: 20px;
-    /*margin: auto;*/
-}
+/*.privateMessage {*/
+/*    background: rgba(0, 128, 0, 0.2);*/
+/*    border: 2px cornsilk solid;*/
+/*    height: 50%;*/
+/*    width: 80%;*/
+/*    margin-bottom: 20px;*/
+/*    font: normal 18px Laksaman;*/
+/*}*/
 
 .infos {
-
     background: rgba(255,255,255,0.2);
     border:2px black solid;
     height: 20%;

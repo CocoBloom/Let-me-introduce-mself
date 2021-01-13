@@ -1,0 +1,13 @@
+{
+  "sessioned" : {
+    "messageContent" :
+        "",
+    "visibleLinks" : " <a class='routeLink' href='/privateInfo'>Private Infos</a><a class='routeLink' href='/logout'>Logout</a>"
+  },
+  "notsessioned" : {
+    "messageContent": "",
+
+    "visibleLinks": "<a class='routeLink' href='/login'>Login</a>"
+  }
+
+}
