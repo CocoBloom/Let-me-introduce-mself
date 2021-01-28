@@ -1,12 +1,11 @@
 {
     "sessioned" : {
-      "messageContent" :
-      "<h3>Üdvözöllek {{, $_SESSION['name'] }}, a bemutatkozó oldalamon! </h3><br/>Baranyai <strong>Virág</strong> vagyok, a Codecool hallgatója. A Prioris által kiadott állásinterjú feladatot szeretném ezzel a mini weboldallal prezentálni. Általánosabb információkért látogass el a Public Infos oldalra, személyesebb, részletesebb információkatkat pedig a Private infos oldalon találsz. A private oldal eléréséhez először be kell jelentkezned, utána válik láthatóvá az oldalra vezető gomb formájú link és elérhetővé a route. Az oldalhoz regisztrációs lehetőség nincsen, így az sql file futtatása után az insertált userek valamelyikével tudsz bejelentkezni. Jelszó szintén az sql file-ban. Remélem tetszeni fog az oldal és a megoldásom is. Virág",
+      "messageContent" : "{{, $_SESSION['name'] }}",
 
       "visibleLinks" : " <a class='routeLink' href='/privateInfo'>Private Infos</a><a class='routeLink' href='/logout'>Logout</a>"
     },
     "notsessioned" : {
-      "messageContent": "<h3>Üdvözöllek! </h3><br/>Baranyai <strong>Virág</strong> vagyok, a Codecool hallgatója. A Prioris által kiadott állásinterjú feladatot szeretném ezzel a mini weboldallal prezentálni. Általánosabb információkért látogass el a Public Infos oldalra, személyesebb, részletesebb információkatkat pedig a Private infos oldalon találsz. A private oldal eléréséhez először be kell jelentkezned, utána válik láthatóvá az oldalra vezető gomb formájú link és elérhetővé a route. Az oldalhoz regisztrációs lehetőség nincsen, így az sql file futtatása után az insertált userek valamelyikével tudsz bejelentkezni. Jelszó szintén az sql file-ban. Remélem tetszeni fog az oldal és a megoldásom is. Virág",
+      "messageContent": "",
       "visibleLinks": "<a class='routeLink' href='/login'>Login</a>"
     }
 

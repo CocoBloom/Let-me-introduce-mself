@@ -29,7 +29,7 @@ class ViewTemplate
 
         foreach($keys as $key ) {
             if($key === 'messageContent') {
-                $setUpSessionedNameInContent = preg_replace('/{{, \$_SESSION\[\'name\'] }}/', $_SESSION['name'], $sessioned['messageContent']);
+                $setUpSessionedNameInContent = preg_replace('/\{\{\, \$\_SESSION\[\'name\'\] \}\}/', $_SESSION['name'], $sessioned['messageContent']);
                 $templateFileContent = preg_replace('/{{ messageContent }}/', $setUpSessionedNameInContent, $templateFileContent);
             } else {
                 $templateFileContent = preg_replace('/{{ '.$key.' }}/', $sessioned[$key], $templateFileContent);

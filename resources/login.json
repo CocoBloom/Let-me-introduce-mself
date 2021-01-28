@@ -1,6 +1,6 @@
 {
   "sessioned" : {
-    "messageContent" : "Egy felhasználó már bejelentkezett az oldalra. Ha más felhasználóval szeretnél bejelntkezni, kérlek előbb jelentkezz ki."
+    "messageContent" : "Egy felhasználó már bejelentkezett az oldalra. Ha más felhasználó névvel szeretnél bejelenntkezni, kérlek előbb jelentkezz ki."
        ,
     "visibleLink" : "<a class='routeLink' href='/privateInfo'>Private Infos</a><a class='routeLink' href='/logout'>Logout</a>"
   },
