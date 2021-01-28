@@ -45,6 +45,8 @@ body{
     font: normal 18px Laksaman;
     overflow-x: hidden;
     overflow-y: scroll;
+    border-radius: 5px;
+
 }
 
 .buttonContainer {

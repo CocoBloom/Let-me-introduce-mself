@@ -94,6 +94,8 @@ img {
     position: center;
     text-align: center;
     background: rgba(0, 128, 0, 0.3);
-
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 5px;
 }
 
