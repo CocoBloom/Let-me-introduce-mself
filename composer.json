@@ -1,5 +1,5 @@
 {
-  "name": "baranyaivirag/prioris",
+  "name": "baranyaivirag/let_me_introduce_myself",
   "authors": [
     {
       "name": "viragbaranyai",
@@ -8,9 +8,7 @@
   ],
   "require": {
     "php": "^7.3|^8.0",
-    "psr/log": "^1.1",
-    "phan/phan": "^3.2",
-    "ext-json": "*"
+    "psr/log": "^1.1"
   },
   "autoload": {
     "psr-4": {
