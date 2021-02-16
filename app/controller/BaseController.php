@@ -1,6 +1,7 @@
 <?php
 namespace App\controller;
 
+use Exception;
 use Framework\database\Connection;
 use Framework\view\ViewTemplate;
 use PDO;
@@ -32,6 +33,4 @@ abstract class BaseController
     }
 
     abstract public function run();
-
-
 }
