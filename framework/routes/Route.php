@@ -5,7 +5,7 @@ class Route
 {
     private array $routeDatas = array();
 
-    public function __construct(string $endpoint, $method, bool $authIsNecessary, string $requestType)
+    public function __construct(string $endpoint, $method, string $requestType,  bool $authIsNecessary)
     {
         $this-> routeDatas["endpoint"] = $endpoint;
         $this->routeDatas["method"] = $method;
