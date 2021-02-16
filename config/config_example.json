@@ -1,0 +1,16 @@
+{
+  "app": {
+    "port": 80
+  },
+
+  "db": {
+    "host": "localhost",
+    "user": "",
+    "password": "",
+    "db_name": ""
+  },
+
+  "templates" : {
+    "templates" : "templates"
+  }
+}
