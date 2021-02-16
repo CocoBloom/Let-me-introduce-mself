@@ -17,7 +17,6 @@
                 <a class="routeLink" href="/publicInfo">Public Infos</a>
                 {{ visibleLink }}
             </div>
-
         </div>
     </div>
 </body>
