@@ -18,22 +18,22 @@ class RouteManager
         Router::add('/', function () {
             $controller = new MainPageController("templates/mainPage.php", 'resources/main.json');
             $controller->run();
-        }, false, "GET");
+        }, "GET");
 
         Router::add('/login', function () {
             $controller = new LoginController("templates/login.php", 'resources/login.json');
             $controller->run();
-        }, false,"GET");
+        }, "GET");
 
         Router::add('/login', function () {
             $controller = new LoginHandlerController("templates/login.php", 'resources/login.json');
             $controller->run();
-        }, false,"POST");
+        }, "POST");
 
         Router::add('/logout', function () {
             $controller = new LogOutController();
             $controller->run();
-        }, false, "GET");
+        }, "GET");
 
         Router::add('/privateInfo', function () {
             if (AuthController::checkAuth()) {
@@ -42,14 +42,11 @@ class RouteManager
                 $controller = new PrivateInfoController("templates/login.php", 'resources/login.json');
             }
             $controller->run();
-        }, true,"GET");
+        }, "GET", true);
 
         Router::add('/publicInfo', function () {
             $controller = new PublicInfoController("templates/publicInfo.php", 'resources/public.json');
             $controller->run();
-        }, false,"GET");
-
-
-
+        }, "GET");
     }
 }
