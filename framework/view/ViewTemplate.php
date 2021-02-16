@@ -14,7 +14,6 @@ class ViewTemplate
         } catch (Exception $e) {
             echo 'catch';
         }
-
     }
 
     public function replaceVariablesInText(string $template, string $json_file)
@@ -38,14 +37,10 @@ class ViewTemplate
         return $templateFileContent;
     }
 
-
     public function getJsonObjectWithControllerVariables(string $json_file): array
     {
         $jsonData = file_get_contents($json_file, true);
         return get_object_vars(json_decode($jsonData));
-
     }
-
-
 }
 

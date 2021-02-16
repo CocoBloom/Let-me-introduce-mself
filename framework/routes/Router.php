@@ -6,12 +6,11 @@ use App\controller\AuthController;
 
 class Router
 {
-
     private static array $routes = Array();
 
-    public static function add(string $endpoint, $method, bool $authIsNecessary, string $requestType)
+    public static function add(string $endpoint, $method, string $requestType,  bool $authIsNecessary = false)
     {
-        self::$routes[$endpoint.$requestType] = new Route($endpoint, $method, $authIsNecessary, $requestType);
+        self::$routes[$endpoint.$requestType] = new Route($endpoint, $method, $requestType, $authIsNecessary);
     }
 
     public static function execute($endpoint, $requestType)
@@ -44,7 +43,5 @@ class Router
     {
         return self::$routes;
     }
-
-
 
 }
