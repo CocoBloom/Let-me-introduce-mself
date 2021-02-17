@@ -36,11 +36,7 @@ class RouteManager
         }, "GET");
 
         Router::add('/privateInfo', function () {
-            if (AuthController::checkAuth()) {
-                $controller = new PrivateInfoController("templates/privateInfo.php", 'resources/private.json');
-            } else {
-                $controller = new PrivateInfoController("templates/login.php", 'resources/login.json');
-            }
+            $controller = new PrivateInfoController("templates/privateInfo.php", 'resources/private.json');
             $controller->run();
         }, "GET", true);
 

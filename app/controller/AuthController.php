@@ -7,7 +7,6 @@ use Framework\routes\Router;
 
 class AuthController
 {
-
     public static function checkAuth(): bool
     {
         session_start();

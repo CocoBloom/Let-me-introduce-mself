@@ -23,6 +23,11 @@ class Route
         return $this->routeDatas['requestType'];
     }
 
+    public function getAuthIsNecessary(): bool
+    {
+        return $this->routeDatas['authIsNecessary'];
+    }
+
     public function execute(): void
     {
         call_user_func($this->routeDatas["method"]);

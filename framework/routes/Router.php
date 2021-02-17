@@ -8,7 +8,7 @@ class Router
 {
     private static array $routes = Array();
 
-    public static function add(string $endpoint, $method, string $requestType,  bool $authIsNecessary = false)
+    public static function add(string $endpoint, $method, string $requestType, bool $authIsNecessary = false)
     {
         self::$routes[$endpoint.$requestType] = new Route($endpoint, $method, $requestType, $authIsNecessary);
     }
@@ -18,7 +18,7 @@ class Router
         $routeExists = true;
         foreach (self::$routes as $route) {
             if($route->getEndPoint() === $endpoint) {
-                if (!$route->getRouteDatas['authIsNecessary']) {
+                if ($route->getAuthIsNecessary() === false) {
                     if ($requestType === $route->getRequestType()) {
                         $route->execute();
                         return;
